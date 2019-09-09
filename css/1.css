@@ -96,7 +96,6 @@ a {
 
     box-shadow: 2px 2px 18px rgba(0,0,0,0.1);
     overflow: hidden;
-    border: 1px solid black;
 }
 
 .header-login a img{
@@ -114,7 +113,6 @@ a {
 .main-roll{
     float: left;
     margin: 100px 20px 0px 80px;
-    border: 1px solid black;
 	overflow:hidden
 }
 
@@ -127,7 +125,6 @@ a {
     float: left;
     width: 540px;
     height: 347px;
-    border: 1px solid black;
     margin: 100px 0 0 0;
 	overflow:hidden
 }
