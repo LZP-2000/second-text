@@ -1,4 +1,6 @@
-body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img{margin:0; padding:0; border:0; list-style:none;}
+body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img{
+	margin:0; padding:0; border:0; list-style:none;
+}
 body{font-family:Arial, Helvetica, sans-serif,"宋体"; font-size:12px;background: #E3E3E3}
 a {
     text-decoration: none;
@@ -8,7 +10,7 @@ a {
 /* .clearfix */
 .contenter{
     margin: 0 auto;
-    width: 1310px;
+    width: 2000px;
 }
 
 .contenter::before , .contenter::after{
@@ -26,10 +28,8 @@ a {
     background: #fff;
     height: 57px;
     position: fixed;
-    padding-left: 150px;
-}
-.contenter_1{
-    width: 1310px;
+	padding-left: 150px;
+	margin-top: -15px;
 }
 
 .header-logo{
@@ -79,9 +79,9 @@ a {
 }
 
 .header-search{
-    float: left;
+	float: left;
+    width: 200x;
     margin: 17px 10px;
-
 }
 
 .header-login{
@@ -90,10 +90,11 @@ a {
 }
 
 .header-login a{
-    display: block;
+	display: block;
     width: 30px;
     height: 30px;
-
+    border: 3px solid #fff;
+    border-radius: 100%;
     box-shadow: 2px 2px 18px rgba(0,0,0,0.1);
     overflow: hidden;
 }
