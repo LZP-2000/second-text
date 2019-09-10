@@ -149,12 +149,16 @@ a {
     height: 173px;
 }
 
-.content{width:1310px;
+
+/* conlumn */
+.column{width:1310px;
 	margin:15px auto 0px 80px;
 	padding-bottom:15px;
 	height: 500px;
-	float: left;}
+	float: left;
+}
 
+/*left*/
 .left{ 
 	width:350px; 
 	float:left;
@@ -162,7 +166,8 @@ a {
 }
 
 .left .module{  
-	width:341px; margin-left: 110px;
+	width:341px;
+	 margin-left: 110px;
 	height:163px; 
 	background:#FBFBFB; 
 	overflow:hidden;margin:4px 4px;
@@ -189,7 +194,7 @@ a {
         text-decoration:none;
 }
 
-/*left*/
+/* center */
 .center{ background: #FFFFFF;
 	margin:0px 0px 0px 12px;  
 	float:left; 
@@ -250,6 +255,7 @@ a {
 	text-decoration:none;
 }
 
+/* right */
 .right{ background: #FFFFFF;
 	margin:0 ; 
 	padding:0px; 
