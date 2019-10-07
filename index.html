@@ -2,8 +2,10 @@
 <html lang="zh">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1,user-scalable=no" />
     <title>二轮考核页面</title>
-    <link href="css/1.css" type="text/css" rel="stylesheet">
+    <link href="css/common.css" type="text/css" rel="stylesheet">
+    <link href="css/layout.css" type="text/css" rel="stylesheet">
 </head>
 <body>
 
@@ -181,5 +183,23 @@
             </div>
         </div>
 
-        <script src="js/1.js"></script>
+<!-- JS我只写了一点点，所以就不用外链了哈 -->
+<script>
+    // 显示二级菜单↓（文章一栏因为我只用css3写，所以if里才多加了一个除去article的条件）
+    var navList = document.getElementById("navList").getElementsByTagName("li")
+
+    for(i = 0; i < navList.length; i++ ){
+        navList[i].onmouseover = function(){
+            if(this.className != "show" && this.className != "article"){
+                this.className = "show"
+        }
+    }
+    navList[i].onmouseout = function(){
+        if(this.className != "" && this.className != "article"){
+            this.className = ""
+        }
+
+    }
+}
+</script>
 </body>
