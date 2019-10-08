@@ -11,14 +11,7 @@ li{
 }
 
 body{
-    height: 800px;
 	background: #F7F7F7;
-}
-
-.contenter{
-	margin: 0 auto;
-	padding: 0;
-    width: 1600px;
 }
 
 
@@ -34,16 +27,25 @@ body{
 .header{
     background: #fff;
     height: 57px;
+    width: 100%;
 	position: fixed;
-	top: 0px;/*关键点*/
+	top: 0px;
     box-shadow: 0 0 10px 0 #d5d5d5;
     z-index:99998;
+}
+
+.header-box{
+    height: 57px;
+    width: 1180px;
+    position: relative;
+    margin: 0 auto;
 }
 
 .header-logo{
     float: left;
     position: absolute;
-    left: 178px;
+    left: 0;
+    top: 0px;
 }
 
 .header-logo a {
@@ -66,7 +68,7 @@ body{
 .header-nav{
     float: left;
     position: absolute;
-    left: 365px;
+    left: 190px;
     width: 960px;
     height: 52px;
     line-height: 52px;
@@ -76,7 +78,7 @@ body{
     margin: 0px;
 }
 
-.header-nav > ul > li{
+.header-nav >ul > li{
     background: #fff;
     float: left;
     width: 90px;
@@ -94,23 +96,18 @@ body{
     color: #FF5A00;
 }
 
-.header-nav img{
-    margin-left: -15px;
-    padding-right: 20px;
-}
-
 
 .header-search{
     float: left;
     position: absolute;
-    left: 1250px;
+    left: 1080px;
     margin-top: 12px;
 }
 
 .header-login{
     float: left;
     position: absolute;
-    left: 1300px;
+    left: 1130px;
     margin-top: 8px;
 }
 
@@ -217,14 +214,20 @@ body{
 /* 正中部分 */
 /* 滚轮图 */
 .main{
-    width: 1500px;
     height: 460px;
+}
+
+.main-box{
+    width: 1180px;
+    height: 460px;
+    position: relative;
+    margin: 0 auto;
 }
 
 .main-roll{
     width: 600px;
     position: absolute;
-    left: 178px;
+    left: 0;
     top: 110px;
 }
 
@@ -236,38 +239,61 @@ body{
 /* 田字图 */
 .main-immove{
     position: absolute;
-    left: 790px;
+    left: 610px;
     top: 110px;
     width: 600px;
     height: 340px;
 }
 
-.main-immove a{
-    display: block;
+.rightbox{
+    position: relative;
     float: left;
-    width: 265px;
-    height: 163px;
+    width: 266px;
+    height: 165px;
     margin: 0 10px 10px 0;
 }
 
-.main-immove a img{
-    width: 265px;
-    height: 163px;
+.main-immove a{
+    display: block;
+    float: left;
+    width: 266px;
+    height: 165px;
 }
 
+.main-immove a img{
+    width: 266px;
+    height: 165px;
+}
+
+.main-immove span{
+    color: #fff;
+    display: block;
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: 1px;
+    position: absolute;
+    bottom: 0;
+}
 /* 底部 */
 /* 左边那一块 */
 .bottom{
     position: relative;
     top:10px;
-    height: 170px;
+    height: 200px;
+}
+
+.bottom-box{
+    width: 1180px;
+    height: 200px;
+    position: relative;
+    margin: 0 auto;
 }
 
 .bottom-left{
     position: absolute;/*1*/
     width:336px;
     height: 170px;
-    left: 178px;
+    left: 0;
 }
 
 .bottom-left ul{
@@ -304,7 +330,7 @@ body{
 /* 右边三块 */
 .bottom-right{
     position: absolute;
-    left: 525px;
+    left: 350px;
     width: 900px;
     height: 170px;
 }
@@ -324,6 +350,7 @@ body{
 }
 
 .banner{
+    position: relative;
     padding-left: 5px;
     height: 45px;
     line-height: 45px;
@@ -349,6 +376,22 @@ body{
     font-size: 12px;
 }
 
+.more{
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    padding: 3px 5px 0;
+    border: 1px solid #efefef;
+    color: #888;
+    line-height:20px;
+    font-size: 10px;
+}
+
+.more:hover{
+    background: #FF5A00;
+    color: #fff;
+}
 
 
 .guild{
